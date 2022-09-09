@@ -35,6 +35,14 @@ body {
     width: 70px;
 }
 
+.img_finishline{
+    width: 200px;
+    height: 300px;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
 
 
 /* --------- Game layout */
@@ -120,14 +128,15 @@ body {
 .btn--big {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
     border: none;
     padding-top: 10px;
     background-color: white;
     width: 80px;
     height: 80px;
     font-size: 3.2rem;
-    margin: 20px 30px;
+    margin: 30px 30px;
+    margin-left: -20px;
+    margin-right: 0px;
     transition: all 0.5s;
 }
 
