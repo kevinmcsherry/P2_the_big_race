@@ -195,17 +195,23 @@ body {
     }
 
     .btn--big {
-        margin: 0 10px;
+        margin: 80px 10px;
         padding: 5px;
-        border: 5px solid;
-        width: 50px;
-        height: 50px;
+        width: 20px;
+        height: 20px;
         font-size: 1.5rem;
     }
 
     .btn--big::after {
         font-size: 0.6rem;
         left: -0.7rem;
+    }
+
+    .img_finishline {
+        margin-right: 10px;
+        width: 60px;
+        height: 300px;
+        margin-bottom: 50px;
     }
 
     .question-area {
@@ -249,13 +255,25 @@ body {
         height: 70vh;
     }
 
+    .img_finishline {
+        margin-right: 10px;
+        width: 60px;
+        height: 300px;
+        margin-top: -50px;
+    }
+
     .controls-area {
         width: 75%;
         margin: 10px auto;
     }
 
     .btn--big {
-        margin: 10px 10px;
+        margin: 80px 10px;
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+        font-size: 1.5rem;
+        margin-left: -20px;
     }
     .question-area {
         padding: 10px 0;
