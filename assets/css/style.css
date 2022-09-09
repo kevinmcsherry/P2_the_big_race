@@ -20,6 +20,23 @@ body {
     padding-right: 5px;
 }
 
+.img_green {
+    height: 60px;
+    width: 70px;
+}
+
+.img_blue {
+    height: 50px;
+    width: 65px;
+}
+
+.img_yellow {
+    height: 60px;
+    width: 70px;
+}
+
+
+
 /* --------- Game layout */
 
 .game-area {
@@ -103,14 +120,14 @@ body {
 .btn--big {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: none;
     padding-top: 10px;
     background-color: white;
     width: 80px;
     height: 80px;
     font-size: 3.2rem;
-    margin: 0 30px;
+    margin: 20px 30px;
     transition: all 0.5s;
 }
 
