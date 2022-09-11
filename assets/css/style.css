@@ -31,8 +31,9 @@ body {
     padding-bottom: 70px;
     height: 60px;
     width: 70px;
-    transition:width 5s linear;
 }
+
+
 
 .car_green:hover {
     transform: scale(1.5);
