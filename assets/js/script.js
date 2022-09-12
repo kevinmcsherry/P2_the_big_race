@@ -22,7 +22,8 @@ function raceTime(min, max) {
     startRaceCar2();
     startRaceCar3();
     /**raceWinner();**/
-    resultMessage();
+    setTimeout(resultMessage, 5000);
+    /**resultMessage();**/
  }
     
 
@@ -51,46 +52,46 @@ function startRaceCar3() {
     raceWinner();
     }
 
-function resetRace(){
-    car1.style.transform = "translateX(0px)";
-    car2.style.transform = "translateX(0px)";
-    car3.style.transform = "translateX(0px)";
-
-} 
-
 function raceWinner() {
-    if (raceT1 < raceT2) {
+    if ((raceT1 < raceT2 && raceT1 < raceT3)) {
         winner = "Car 1";
         result = "Win";
-        message = "Car 1 Wins!";
+        message = "Green Car Wins!";
     }
-       else if (raceT2 < raceT1) {
+       else if ((raceT2 < raceT1 && raceT2 < raceT3)) {
         winner = "Car 2";
         result = "Win";
-        message = "Car 2 Wins!";
+        message = "Blue Car Wins!";
         }
-        else if (raceT3 < raceT1); {
+        else if ((raceT3 < raceT1 && raceT3 < raceT2)) {
         winner = "Car 3";
         result = "Win";
-        message = "Car 3 Wins!"; 
+        message = "Red Car Wins!"; 
         }
-        /** 
-        else if (raceT1 == raceT2 || raceT1 == raceT3) {
+        
+        else if ((raceT1 == raceT2 || raceT1 == raceT3)) {
         result = "Draw";
         message = "Its a Draw"
         }
-        else if (raceT2 == raceT1 || raceT2 == raceT3) {
+        else if ((raceT2 == raceT1 || raceT2 == raceT3)) {
             result = "Draw";
             message = "Its a Draw";
         }
-        else if (raceT3 == raceT1 || raceT3 == raceT2) {
+        else if ((raceT3 == raceT1 || raceT3 == raceT2)) {
             result = "Draw";
             message = "Its a Draw";
-        } **/
+        } 
         console.log(message);
     }
 
-    function resultMessage() {
-        document.getElementById("race_result").innerText = message;
+    function resultMessage(){
+        document.getElementById("race_result").innerText = message +"!";
     }
+
+    function resetRace(){
+        car1.style.transform = "translateX(0px)";
+        car2.style.transform = "translateX(0px)";
+        car3.style.transform = "translateX(0px)";
+        document.getElementById("race_result").innerText = null;
+    } 
 

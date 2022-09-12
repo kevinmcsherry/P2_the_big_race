@@ -152,6 +152,12 @@ body {
     font-style: italic;
 }
 
+#race_result {
+    color:red;
+}
+
+
+
 
 /* --------- Media queries */
 
