@@ -6,6 +6,10 @@ let width = screen.width;
 console.log(width);
 let raceWidth = width / 2.5;
 
+function raceTime(min, max) {
+       return Math.floor(Math.random() * (max - min) + min);
+}
+
 
  function startRace() {
     startRaceCar1();
@@ -15,25 +19,29 @@ let raceWidth = width / 2.5;
     
 
 function startRaceCar1() {
+    let raceT = raceTime (3,8);
     car1.style.position = "relative";
     car1.style.transform = "translateX(" + raceWidth + "px)";
-    car1.style.transition=" all 4s"
+    car1.style.transition=" all "+ raceT +"s";
 }
 
 function startRaceCar2() {
+    let raceT = raceTime (3,8);
     car2.style.position = "relative";
     car2.style.transform = "translateX(" + raceWidth + "px)";
-    car2.style.transition=" all 6s"
+    car2.style.transition=" all "+ raceT +"s";
 }
 
 function startRaceCar3() {
+    let raceT = raceTime (3,8);
     car3.style.position = "relative";
     car3.style.transform = "translateX(" + raceWidth + "px)";
-    car3.style.transition=" all 7s"
+    car3.style.transition=" all "+ raceT +"s";
     }
 
 function resetRace(){
-    window.location.reload();
-}
+    car1.style.transform = "translateX(0px)";
+    car2.style.transform = "translateX(0px)";
+    car3.style.transform = "translateX(0px)";
 
-
+} 
