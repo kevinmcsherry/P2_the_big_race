@@ -20,7 +20,7 @@
     </h1>
 
     <div class="game-area">
-        <p> Who will win the race? Click on your choice!</p>
+        <p class="instruction_p"> Who will win the race? <br> Click on the car you think will win!</p>
         <div class="controls-area">
             <img class = "img_finishline" id="finishline" src="assets/images/finish_line.png">
 
@@ -32,11 +32,11 @@
             
         </div>
 
-        <button data-type="Reset" class="reset-button" onClick="resetRace()">Reset Race!</button>
-        
+        <button data-type="Reset" class="reset-button" onClick="resetRace()">Start a new race!!</button>
     </div>
 
     <div class="score-area">
+       <P class="result">Race Result =  <span id="race_result">""</span></P>
         <p class="scores">Wins  <span id="score">0</span></p>
         <p class="scores">Losses  <span id="incorrect">0</span></p>
     </div>
