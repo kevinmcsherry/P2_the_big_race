@@ -2,7 +2,9 @@
 let car1 = document.getElementById("car_green");
 let car2 = document.getElementById("car_blue");
 let car3 = document.getElementById("car_red");
-
+let width = screen.width;
+console.log(width);
+let raceWidth = width / 2.5;
 
 
  function startRace() {
@@ -14,19 +16,19 @@ let car3 = document.getElementById("car_red");
 
 function startRaceCar1() {
     car1.style.position = "relative";
-    car1.style.transform = "translateX(550px)";
+    car1.style.transform = "translateX(" + raceWidth + "px)";
     car1.style.transition=" all 4s"
 }
 
 function startRaceCar2() {
     car2.style.position = "relative";
-    car2.style.transform = "translateX(550px)";
+    car2.style.transform = "translateX(" + raceWidth + "px)";
     car2.style.transition=" all 6s"
 }
 
 function startRaceCar3() {
     car3.style.position = "relative";
-    car3.style.transform = "translateX(550px)";
+    car3.style.transform = "translateX(" + raceWidth + "px)";
     car3.style.transition=" all 7s"
     }
 

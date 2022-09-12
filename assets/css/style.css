@@ -1,7 +1,7 @@
 /* --------- Global style */
 
 body {
-    background-color: rgb(146, 239, 110);
+    background-color: rgb(88, 154, 62);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #445361;
     text-align: center;
@@ -105,7 +105,7 @@ body {
 }
 
 #score {
-    color: green;
+    color: rgb(53, 234, 53);
     font-weight: bold;
 }
 
@@ -171,7 +171,7 @@ body {
         margin: 0 auto;
     }
     .reset-button {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .score-area {
@@ -195,10 +195,10 @@ body {
     }
 
     .img_finishline {
-        margin-right: 10px;
+        margin-right: -20px;
         width: 60px;
         height: 300px;
-        margin-top: -50px;
+        margin-top: 20px;
     }
 
     .controls-area {
