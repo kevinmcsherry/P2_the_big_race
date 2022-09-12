@@ -3,8 +3,8 @@ let car1 = document.getElementById("car_green");
 let car2 = document.getElementById("car_blue");
 let car3 = document.getElementById("car_red");
 let width = screen.width;
+let raceWidth;
 console.log(width);
-let raceWidth = width / 2.5;
 let raceT1;
 let raceT2;
 let raceT3;
@@ -16,8 +16,46 @@ function raceTime(min, max) {
        return Math.floor(Math.random() * (max - min) + min);
 }
 
+function screenWidth() {
+    let width = window.innerWidth;
+
+    if (width > 1200) {
+         raceWidth = width / 2.2;
+         console.log(width);
+         console.log(raceWidth);
+    }
+    else if (width > 1000) {
+        raceWidth = width / 1.9;
+        console.log(width);
+         console.log(raceWidth);
+
+    }
+    else if (width > 700) {
+        raceWidth = width / 1.7;
+        console.log(width);
+         console.log(raceWidth);
+    }
+    else if (width > 500) {
+        raceWidth = width / 1.9;
+        console.log(width);
+         console.log(raceWidth);
+    }
+    else if (width > 400) {
+        raceWidth = width / 1.7;
+        console.log(width);
+         console.log(raceWidth);
+    }
+    else {
+        raceWidth = width / 2;
+        console.log(width);
+         console.log(raceWidth);
+    }
+    
+}
+
 
  function startRace() {
+    screenWidth();
     startRaceCar1();
     startRaceCar2();
     startRaceCar3();
