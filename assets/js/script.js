@@ -155,20 +155,22 @@ function raceWinner() {
                 console.log(choice_blue);
                 console.log(choice_red);
                 console.log(e.target.id);
-            });
+            
 
-                /**function setScores() {
-                    if (choice_green = true && message == "car_green") {
+                function setScores() {
+                    if (choice_green = true && message == "Green Wins!") {
                         console.log("Green +1");
-                    }else if (choice_blue = true && message == "car_blue") {
+                    }else if (choice_blue = true && message == "Blue Wins!") {
                         console.log ("Blue +1");
-                    }else if (choice_red = true && message == "car_red") {
+                    }else if (choice_red = true && message == "Red Wins!") {
                         console.log("Red +1");
                         }
+                        console.log(message);
                     }
             setScores();
-                });**/
-        }
+                });
+                }
+        
 
 
     function resultMessage(){
