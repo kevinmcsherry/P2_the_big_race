@@ -98,16 +98,18 @@ body {
     padding: 0 15px;
 }
 
-.reset-button {
+.reset-button, .new_race_button {
     color: red;
     font-weight: bold;
+    font-size: large;
     margin-top: 0px;
     padding: 0;
     border-color: black;
-    width: fit-content;
+    width: 120px;
+    height: 50px;
 }
 
-.reset-button:hover {
+.reset-button:hover, .new_race_button:hover {
     background-color: yellow;
 }
 
@@ -153,9 +155,6 @@ body {
     text-align: center;
 }
 
-#race_result {
-    color:red;
-}
 
 
 

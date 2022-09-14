@@ -95,34 +95,41 @@ function raceWinner() {
         winner = "Car 1";
         result = "Win";
         message = "Green Car Wins!";
+        document.getElementById("race_result").style.color = "chartreuse";
     }
        else if ((raceT2 < raceT1 && raceT2 < raceT3)) {
         winner = "Car 2";
         result = "Win";
         message = "Blue Car Wins!";
+        document.getElementById("race_result").style.color = "blue";
         }
         else if ((raceT3 < raceT1 && raceT3 < raceT2)) {
         winner = "Car 3";
         result = "Win";
         message = "Red Car Wins!"; 
+        document.getElementById("race_result").style.color = "red";
         }
         
         else if ((raceT1 == raceT2 || raceT1 == raceT3)) {
         result = "Draw";
         message = "Its a Draw"
+        document.getElementById("race_result").style.color = "black";
         }
         else if ((raceT2 == raceT1 || raceT2 == raceT3)) {
             result = "Draw";
             message = "Its a Draw";
+            document.getElementById("race_result").style.color = "black";
         }
         else if ((raceT3 == raceT1 || raceT3 == raceT2)) {
             result = "Draw";
             message = "Its a Draw";
+            document.getElementById("race_result").style.color = "black";
         } 
         console.log(message);
     }
 
     function resultMessage(){
+
         document.getElementById("race_result").innerText = message +"!";
     }
 
@@ -132,4 +139,8 @@ function raceWinner() {
         car3.style.transform = "translateX(0px)";
         document.getElementById("race_result").innerText = null;
     } 
+
+    function resetGame(){
+        window.location.reload();
+    }
 
