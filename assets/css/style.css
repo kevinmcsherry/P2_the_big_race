@@ -103,14 +103,24 @@ body {
     font-weight: bold;
     font-size: large;
     margin-top: 0px;
+    margin-right: auto;
     padding: 0;
     border-color: black;
     width: 120px;
     height: 50px;
+    display: inline;
 }
 
 .reset-button:hover, .new_race_button:hover {
     background-color: yellow;
+}
+
+#win_p {
+    margin-bottom: 0;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
 }
 
 .score-area {
@@ -124,8 +134,16 @@ body {
     margin: 30px auto;
 }
 
-#score {
+#green_score {
     color: rgb(53, 234, 53);
+    font-weight: bold;
+}
+#blue_score {
+    color: blue;
+    font-weight: bold;
+}
+#red_score {
+    color: red;
     font-weight: bold;
 }
 
@@ -145,6 +163,7 @@ body {
     padding: 5px;
     color: black;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .result {
@@ -164,6 +183,16 @@ body {
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;
+    }
+
+    .reset-button, .new_race_button {
+        width: fit-content;
+        font-size: small;
+        display: inline;
+        height: fit-content;
+        margin-top: 50px;
+        margin-left: 10px;
+        padding: 5px;
     }
 
     .car_green {
@@ -226,9 +255,6 @@ body {
         display: block;
         margin: 0 auto;
     }
-    .reset-button {
-        margin-top: 10px;
-    }
 
     .score-area {
         width: 100%;
@@ -249,6 +275,16 @@ body {
     .game-area {
         height: 90vh;
         margin-top: -10px;
+    }
+
+    .reset-button, .new_race_button {
+        width: fit-content;
+        font-size: small;
+        display: inline;
+        height: fit-content;
+        margin-top: 30px;
+        margin-left: 10px;
+        padding: 5px;
     }
 
     .instruction_p {
@@ -293,13 +329,6 @@ body {
         height: 20px;
         font-size: 1.5rem;
         margin-left: -20px;
-    }
-
-    .reset-button {
-        position: absolute;
-        bottom: 50px;
-        margin-right: 60px;
-
     }
 
 }

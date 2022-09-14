@@ -11,6 +11,10 @@ let raceT3;
 let winner;
 let result;
 let message;
+let userWin;
+let choice_green;
+let choice_red;
+let choice_blue;
 
 function raceTime(min, max) {
        return Math.floor(Math.random() * (max - min) + min);
@@ -59,9 +63,11 @@ function screenWidth() {
     startRaceCar1();
     startRaceCar2();
     startRaceCar3();
+    userChoice();
     /**raceWinner();**/
     setTimeout(resultMessage, 5000);
     /**resultMessage();**/
+    
  }
     
 
@@ -90,48 +96,85 @@ function startRaceCar3() {
     raceWinner();
     }
 
+
+
 function raceWinner() {
     if ((raceT1 < raceT2 && raceT1 < raceT3)) {
-        winner = "Car 1";
+        winner = "Green";
         result = "Win";
-        message = "Green Car Wins!";
+        message = "Green Wins!";
         document.getElementById("race_result").style.color = "chartreuse";
     }
        else if ((raceT2 < raceT1 && raceT2 < raceT3)) {
-        winner = "Car 2";
+        winner = "Blue";
         result = "Win";
-        message = "Blue Car Wins!";
+        message = "Blue Wins!";
         document.getElementById("race_result").style.color = "blue";
         }
         else if ((raceT3 < raceT1 && raceT3 < raceT2)) {
-        winner = "Car 3";
+        winner = "Red";
         result = "Win";
-        message = "Red Car Wins!"; 
+        message = "Red Wins!"; 
         document.getElementById("race_result").style.color = "red";
         }
         
         else if ((raceT1 == raceT2 || raceT1 == raceT3)) {
         result = "Draw";
-        message = "Its a Draw"
+        message = "Draw"
         document.getElementById("race_result").style.color = "black";
         }
         else if ((raceT2 == raceT1 || raceT2 == raceT3)) {
             result = "Draw";
-            message = "Its a Draw";
+            message = "Draw";
             document.getElementById("race_result").style.color = "black";
         }
         else if ((raceT3 == raceT1 || raceT3 == raceT2)) {
             result = "Draw";
-            message = "Its a Draw";
+            message = "Draw";
             document.getElementById("race_result").style.color = "black";
         } 
         console.log(message);
     }
 
-    function resultMessage(){
+    function userChoice() {
+        let choice_green = false;
+        let choice_blue = false;
+        let choice_red = false;
+        
+            document.addEventListener('click', function(e) {
+            ( e.target.id );
 
+                if (e.target.id == "car_green"){ 
+                    choice_green = true;
+                } else if (e.target.id == "car_blue") {
+                    choice_blue = true;
+                } else {
+                    choice_red = true;
+                }
+                console.log(choice_green);
+                console.log(choice_blue);
+                console.log(choice_red);
+                console.log(e.target.id);
+            });
+
+                /**function setScores() {
+                    if (choice_green = true && message == "car_green") {
+                        console.log("Green +1");
+                    }else if (choice_blue = true && message == "car_blue") {
+                        console.log ("Blue +1");
+                    }else if (choice_red = true && message == "car_red") {
+                        console.log("Red +1");
+                        }
+                    }
+            setScores();
+                });**/
+        }
+
+
+    function resultMessage(){
         document.getElementById("race_result").innerText = message +"!";
     }
+
 
     function resetRace(){
         car1.style.transform = "translateX(0px)";
@@ -144,3 +187,7 @@ function raceWinner() {
         window.location.reload();
     }
 
+
+    
+
+    
