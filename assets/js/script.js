@@ -158,33 +158,33 @@ function raceWinner() {
     function winMsg() {
         if (choice_green == true && message == "Green Wins!") {
             message = "Yeah! " + message;
-            setGreenScore();}
+            setTimeout(setGreenScore, 5000);}
                 else if (choice_green == true && message == "Red Wins!") {
                 message = "Unlucky! " + message;
-                setRedScore();}
+                setTimeout(setRedScore, 5000);}
                     else if (choice_green == true && message == "Blue Wins!") {
                     message = message = "Unlucky! " + message;
-                    setBlueScore();}
+                    setTimeout(setBlueScore, 5000);}
 
         else if (choice_blue == true && message == "Blue Wins!") {
             message = "Yeah! " + message;
-            setBlueScore();}
+            setTimeout(setBlueScore, 5000);}
                 else if (choice_blue == true && message == "Green Wins!") {
                 message = "Unlucky! " + message;
-                setGreenScore();}
+                setTimeout(setGreenScore, 5000);}
                     else if (choice_blue == true && message == "Red Wins!") {
                     message = "Unlucky! " + message;
-                    setRedScore();}
+                    setTimeout(setRedScore, 5000);}
 
         else if (choice_red == true && message == "Red Wins!") {
             message = "Yeah! " + message;
-            setRedScore();}
+            setTimeout(setRedScore, 5000);}
             else if (choice_red == true && message == "Green Wins!") {
                 message = "Unlucky! " + message;
-                setGreenScore();}
+                setTimeout(setGreenScore, 5000);}
                 else if (choice_red == true && message == "Blue Wins!") {
                     message = "Unlucky! " + message;
-                    setBlueScore();}
+                    setTimeout(setBlueScore, 5000);}
 
                     choice_green = false;
                     choice_blue = false;
