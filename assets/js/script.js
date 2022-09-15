@@ -4,7 +4,6 @@ let car2 = document.getElementById("car_blue");
 let car3 = document.getElementById("car_red");
 let width = screen.width;
 let raceWidth;
-console.log(width);
 let raceT1;
 let raceT2;
 let raceT3;
@@ -29,7 +28,7 @@ function screenWidth() {
          console.log(raceWidth);
     }
     else if (width > 1000) {
-        raceWidth = width / 1.9;
+        raceWidth = width / 1.8;
         console.log(width);
          console.log(raceWidth);
 
@@ -155,28 +154,64 @@ function raceWinner() {
                 console.log(choice_blue);
                 console.log(choice_red);
                 console.log(e.target.id);
+
+    function winMsg() {
+        if (choice_green == true && message == "Green Wins!") {
+            message = "Yeah! " + message;
+            setGreenScore();}
+                else if (choice_green == true && message == "Red Wins!") {
+                message = "Unlucky! " + message;
+                setRedScore();}
+                    else if (choice_green == true && message == "Blue Wins!") {
+                    message = message = "Unlucky! " + message;
+                    setBlueScore();}
+
+        else if (choice_blue == true && message == "Blue Wins!") {
+            message = "Yeah! " + message;
+            setBlueScore();}
+                else if (choice_blue == true && message == "Green Wins!") {
+                message = "Unlucky! " + message;
+                setGreenScore();}
+                    else if (choice_blue == true && message == "Red Wins!") {
+                    message = "Unlucky! " + message;
+                    setRedScore();}
+
+        else if (choice_red == true && message == "Red Wins!") {
+            message = "Yeah! " + message;
+            setRedScore();}
+            else if (choice_red == true && message == "Green Wins!") {
+                message = "Unlucky! " + message;
+                setGreenScore();}
+                else if (choice_red == true && message == "Blue Wins!") {
+                    message = "Unlucky! " + message;
+                    setBlueScore();}
+
+                    choice_green = false;
+                    choice_blue = false;
+                    choice_red = false;
+                } 
+                winMsg();
+            });
+        }
+
+    function setGreenScore() {
+            let oldScore = parseInt(document.getElementById("green_score").innerText);
+            document.getElementById("green_score").innerText = ++oldScore;
+        }
+        function setBlueScore() {
+            let oldScore = parseInt(document.getElementById("blue_score").innerText);
+            document.getElementById("blue_score").innerText = ++oldScore;
+        }
+
+        function setRedScore() {
+            let oldScore = parseInt(document.getElementById("red_score").innerText);
+            document.getElementById("red_score").innerText = ++oldScore;
+        }
+
             
-
-                function setScores() {
-                    if (choice_green = true && message == "Green Wins!") {
-                        console.log("Green +1");
-                    }else if (choice_blue = true && message == "Blue Wins!") {
-                        console.log ("Blue +1");
-                    }else if (choice_red = true && message == "Red Wins!") {
-                        console.log("Red +1");
-                        }
-                        console.log(message);
-                    }
-            setScores();
-                });
-                }
-        
-
-
     function resultMessage(){
         document.getElementById("race_result").innerText = message +"!";
     }
-
 
     function resetRace(){
         car1.style.transform = "translateX(0px)";
