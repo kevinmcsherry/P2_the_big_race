@@ -63,10 +63,8 @@ function screenWidth() {
     startRaceCar2();
     startRaceCar3();
     userChoice();
-    /**raceWinner();**/
     setTimeout(resultMessage, 5000);
-    /**resultMessage();**/
-    
+    setTimeout(resetRace, 7000);
  }
     
 
