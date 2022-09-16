@@ -63,14 +63,14 @@ function screenWidth() {
     startRaceCar2();
     startRaceCar3();
     userChoice();
-    setTimeout(resultMessage, 5000);
-    setTimeout(resetRace, 7000);
-    setTimeout(gameWin, 8000);
+    setTimeout(resultMessage, 4000);
+    setTimeout(resetRace, 5000);
+    setTimeout(gameWin, 7000);
  }
     
 
 function startRaceCar1() {
-    raceT1 = raceTime (3,8);
+    raceT1 = raceTime (2,6);
     car1.style.position = "relative";
     car1.style.transform = "translateX(" + raceWidth + "px)";
     car1.style.transition=" all "+ raceT1 +"s";
@@ -78,7 +78,7 @@ function startRaceCar1() {
 }
 
 function startRaceCar2() {
-    raceT2 = raceTime (3,8);
+    raceT2 = raceTime (2,6);
     car2.style.position = "relative";
     car2.style.transform = "translateX(" + raceWidth + "px)";
     car2.style.transition=" all "+ raceT2 +"s";
@@ -86,7 +86,7 @@ function startRaceCar2() {
 }
 
 function startRaceCar3() {
-    raceT3 = raceTime (3,8);
+    raceT3 = raceTime (2,6);
     car3.style.position = "relative";
     car3.style.transform = "translateX(" + raceWidth + "px)";
     car3.style.transition=" all "+ raceT3 +"s";
@@ -160,10 +160,10 @@ function raceWinner() {
             setTimeout(setGreenScore, 4000);
             setTimeout(setPlayerScore, 4000);}
                 else if (choice_green == true && message == "Red Wins!") {
-                message = "Unlucky! " + message;
+                message = "Bad Luck! " + message;
                 setTimeout(setRedScore, 5000);}
                     else if (choice_green == true && message == "Blue Wins!") {
-                    message = message = "Unlucky! " + message;
+                    message = message = "Bad Luck! " + message;
                     setTimeout(setBlueScore, 5000);}
 
         else if (choice_blue == true && message == "Blue Wins!") {
@@ -172,10 +172,10 @@ function raceWinner() {
             setTimeout(setPlayerScore, 4000);}
             
                 else if (choice_blue == true && message == "Green Wins!") {
-                message = "Unlucky! " + message;
+                message = "Bad Luck! " + message;
                 setTimeout(setGreenScore, 5000);}
                     else if (choice_blue == true && message == "Red Wins!") {
-                    message = "Unlucky! " + message;
+                    message = "Bad Luck! " + message;
                     setTimeout(setRedScore, 5000);}
 
         else if (choice_red == true && message == "Red Wins!") {
@@ -183,10 +183,10 @@ function raceWinner() {
             setTimeout(setRedScore, 5000);
             setTimeout(setPlayerScore, 4000);}
             else if (choice_red == true && message == "Green Wins!") {
-                message = "Unlucky! " + message;
+                message = "Bad Luck! " + message;
                 setTimeout(setGreenScore, 5000);}
                 else if (choice_red == true && message == "Blue Wins!") {
-                    message = "Unlucky! " + message;
+                    message = "Bad Luck! " + message;
                     setTimeout(setBlueScore, 5000);}
 
                     choice_green = false;
@@ -243,22 +243,18 @@ function raceWinner() {
         let blueScore = document.getElementById("blue_score").innerText;
         let greenScore = document.getElementById("green_score").innerText;
 
-        if (playerScore == "2") {
+        if (playerScore == "5") {
             message = "You Win!";
             champMessage();
-        }else if (redScore == "2") {
+        }else if (redScore == "5") {
                   message = "Red Car";
                   champMessage();}
-            else if (blueScore == "2") {
+            else if (blueScore == "5") {
                     message = "Blue Car";
                     champMessage();}
-                else if (greenScore == "2") {
+                else if (greenScore == "5") {
                         message = "Green Car";
                         champMessage();}
-
-        /**if (playerScore == "5" || redScore == "5" || blueScore == "5" || greenScore == "5") {
-            resetGame();
-        }**/
     }
         
 
