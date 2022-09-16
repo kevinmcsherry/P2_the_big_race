@@ -223,6 +223,7 @@ function raceWinner() {
 
     function champMessage(){
         document.getElementById("champ_result").innerText = "Championship Winner = " + message;
+        setTimeout(resetGame, 7000);
     }
 
     function resetRace(){
@@ -243,16 +244,16 @@ function raceWinner() {
         let greenScore = document.getElementById("green_score").innerText;
 
         if (playerScore == "2") {
-            message == "You Win!";
+            message = "You Win!";
             champMessage();
         }else if (redScore == "2") {
-                  message == "Red Wins";
+                  message = "Red Car";
                   champMessage();}
             else if (blueScore == "2") {
-                    message = "Blue Wins";
+                    message = "Blue Car";
                     champMessage();}
                 else if (greenScore == "2") {
-                        message == "Green Wins";
+                        message = "Green Car";
                         champMessage();}
 
         /**if (playerScore == "5" || redScore == "5" || blueScore == "5" || greenScore == "5") {
