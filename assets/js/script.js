@@ -65,6 +65,7 @@ function screenWidth() {
     userChoice();
     setTimeout(resultMessage, 5000);
     setTimeout(resetRace, 7000);
+    setTimeout(gameWin, 8000);
  }
     
 
@@ -220,6 +221,10 @@ function raceWinner() {
         document.getElementById("race_result").innerText = message +"!";
     }
 
+    function champMessage(){
+        document.getElementById("champ_result").innerText = "Championship Winner = " + message;
+    }
+
     function resetRace(){
         car1.style.transform = "translateX(0px)";
         car2.style.transform = "translateX(0px)";
@@ -230,6 +235,32 @@ function raceWinner() {
     function resetGame(){
         window.location.reload();
     }
+
+    function gameWin() {
+        let playerScore = document.getElementById("player_score").innerText;
+        let redScore = document.getElementById("red_score").innerText;
+        let blueScore = document.getElementById("blue_score").innerText;
+        let greenScore = document.getElementById("green_score").innerText;
+
+        if (playerScore == "2") {
+            message == "You Win!";
+            champMessage();
+        }else if (redScore == "2") {
+                  message == "Red Wins";
+                  champMessage();}
+            else if (blueScore == "2") {
+                    message = "Blue Wins";
+                    champMessage();}
+                else if (greenScore == "2") {
+                        message == "Green Wins";
+                        champMessage();}
+
+        /**if (playerScore == "5" || redScore == "5" || blueScore == "5" || greenScore == "5") {
+            resetGame();
+        }**/
+    }
+        
+
 
 
     
