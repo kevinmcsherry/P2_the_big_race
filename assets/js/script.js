@@ -158,7 +158,8 @@ function raceWinner() {
     function winMsg() {
         if (choice_green == true && message == "Green Wins!") {
             message = "Yeah! " + message;
-            setTimeout(setGreenScore, 5000);}
+            setTimeout(setGreenScore, 4000);
+            setTimeout(setPlayerScore, 4000);}
                 else if (choice_green == true && message == "Red Wins!") {
                 message = "Unlucky! " + message;
                 setTimeout(setRedScore, 5000);}
@@ -168,7 +169,9 @@ function raceWinner() {
 
         else if (choice_blue == true && message == "Blue Wins!") {
             message = "Yeah! " + message;
-            setTimeout(setBlueScore, 5000);}
+            setTimeout(setBlueScore, 5000);
+            setTimeout(setPlayerScore, 4000);}
+            
                 else if (choice_blue == true && message == "Green Wins!") {
                 message = "Unlucky! " + message;
                 setTimeout(setGreenScore, 5000);}
@@ -178,7 +181,8 @@ function raceWinner() {
 
         else if (choice_red == true && message == "Red Wins!") {
             message = "Yeah! " + message;
-            setTimeout(setRedScore, 5000);}
+            setTimeout(setRedScore, 5000);
+            setTimeout(setPlayerScore, 4000);}
             else if (choice_red == true && message == "Green Wins!") {
                 message = "Unlucky! " + message;
                 setTimeout(setGreenScore, 5000);}
@@ -206,6 +210,11 @@ function raceWinner() {
         function setRedScore() {
             let oldScore = parseInt(document.getElementById("red_score").innerText);
             document.getElementById("red_score").innerText = ++oldScore;
+        }
+
+        function setPlayerScore () {
+            let oldScore = parseInt(document.getElementById("player_score").innerText);
+            document.getElementById("player_score").innerText = ++oldScore;
         }
 
             

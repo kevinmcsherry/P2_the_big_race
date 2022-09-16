@@ -147,6 +147,11 @@ body {
     font-weight: bold;
 }
 
+#player_score {
+    color: yellow;
+    font-weight: bold;
+}
+
 #incorrect {
     color: red;
     font-weight: bold;
