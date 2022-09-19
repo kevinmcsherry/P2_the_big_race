@@ -1,4 +1,6 @@
 
+// Setting global variables // 
+
 let car1 = document.getElementById("car_green");
 let car2 = document.getElementById("car_blue");
 let car3 = document.getElementById("car_red");
@@ -15,9 +17,13 @@ let choice_green;
 let choice_red;
 let choice_blue;
 
+// function to set the racetime for each car //
+
 function raceTime(min, max) {
        return Math.floor(Math.random() * (max - min) + min);
 }
+
+// Calculate the screen width to determine the length of race course //
 
 function screenWidth() {
     let width = window.innerWidth;
@@ -56,6 +62,7 @@ function screenWidth() {
     
 }
 
+ // Main function to run race //
 
  function startRace() {
     screenWidth();
@@ -68,6 +75,7 @@ function screenWidth() {
     setTimeout(gameWin, 7000);
  }
     
+ // Sub function for Race Car1 //
 
 function startRaceCar1() {
     raceT1 = raceTime (2,6);
@@ -77,6 +85,8 @@ function startRaceCar1() {
     console.log(raceT1);
 }
 
+// Sub function for Race Car2 //
+
 function startRaceCar2() {
     raceT2 = raceTime (2,6);
     car2.style.position = "relative";
@@ -84,6 +94,8 @@ function startRaceCar2() {
     car2.style.transition=" all "+ raceT2 +"s";
     console.log(raceT2);
 }
+
+// Sub function for Race Car3 //
 
 function startRaceCar3() {
     raceT3 = raceTime (2,6);
@@ -94,7 +106,7 @@ function startRaceCar3() {
     raceWinner();
     }
 
-
+// Function to determine race winner //
 
 function raceWinner() {
     if ((raceT1 < raceT2 && raceT1 < raceT3)) {
@@ -134,6 +146,8 @@ function raceWinner() {
         console.log(message);
     }
 
+    // Function to determine who the user chose to win //
+
     function userChoice() {
         let choice_green = false;
         let choice_blue = false;
@@ -153,6 +167,8 @@ function raceWinner() {
                 console.log(choice_blue);
                 console.log(choice_red);
                 console.log(e.target.id);
+
+// Sub function to determine correct winning message //
 
     function winMsg() {
         if (choice_green == true && message == "Green Wins!") {
@@ -197,6 +213,8 @@ function raceWinner() {
             });
         }
 
+        // Setting the scores post-race //  
+
     function setGreenScore() {
             let oldScore = parseInt(document.getElementById("green_score").innerText);
             document.getElementById("green_score").innerText = ++oldScore;
@@ -217,14 +235,21 @@ function raceWinner() {
         }
 
             
+
+        // Post result message //
+
     function resultMessage(){
         document.getElementById("race_result").innerText = message +"!";
     }
+
+       // Post championship message //
 
     function champMessage(){
         document.getElementById("champ_result").innerText = "Championship Winner = " + message;
         setTimeout(resetGame, 7000);
     }
+
+    // Function to reset race //
 
     function resetRace(){
         car1.style.transform = "translateX(0px)";
@@ -233,9 +258,13 @@ function raceWinner() {
         document.getElementById("race_result").innerText = null;
     } 
 
+    // Function to reset the game //
+    
     function resetGame(){
         window.location.reload();
     }
+
+    // Function to determine who wins overall game //
 
     function gameWin() {
         let playerScore = document.getElementById("player_score").innerText;

@@ -14,28 +14,33 @@
     <title>The Big Race</title>
 </head>
 
+<!-- Header and Logo area-->
+
 <body>
     <h1 class="heading">
         <img class="logo" src="assets/images/logo.png" alt="logo"> The Big Race!
     </h1>
 
+<!--Main play area-->
+
     <div class="game-area">
         <p class="instruction_p"> Click on the car you think will win each race! <br> First to 5 wins the Championship!</p>
         <div class="controls-area">
-            <img class = "img_finishline" id="finishline" src="assets/images/finish_line.png">
+            <img class = "img_finishline" id="finishline" alt= "Finish line" src="assets/images/finish_line.png">
 
-            <img class="car_green car" id="car_green" onClick="startRace()" src="assets/images/green_car.png">
+            <img class="car_green car" id="car_green" onClick="startRace()" alt="Green Car" src="assets/images/green_car.png">
                
-            <img class="car_blue car" id="car_blue" onClick="startRace()" src="assets/images/blue_car.png">
+            <img class="car_blue car" id="car_blue" onClick="startRace()" alt="Blue Car" src="assets/images/blue_car.png">
                 
-            <img class="car_red  car" id="car_red" onClick="startRace()" src="assets/images/red_car.jpeg">
+            <img class="car_red  car" id="car_red" onClick="startRace()" alt="Red Car" src="assets/images/red_car.png">
             
         </div>
 
-       <!--<button data-type="Reset" class="reset-button" onClick="resetRace()">New race!</button> -->
-        <button data-type="Reset" class="new_race_button" onClick="resetGame()">Reset Game</button>
+        <button data-type="Reset" class="reset_button" onClick="resetGame()">Reset Game</button>
 
     </div>
+
+    <!--Scores area-->
 
     <div class="score-area">
         <p class="championship"><span id="champ_result"></span></p>
@@ -44,7 +49,7 @@
         <p class="scores">Green  <span id="green_score">0</span></p>
         <p class="scores">Red  <span id="red_score">0</span></p>
         <p class="scores">Blue  <span id="blue_score">0</span></p>
-        <p class="scores">Player  <span id="player_score">0</span></p>
+        <p class="scores">You  <span id="player_score">0</span></p>
 
     </div>
 
