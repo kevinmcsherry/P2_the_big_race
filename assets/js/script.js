@@ -4,7 +4,6 @@
 let car1 = document.getElementById("car_green");
 let car2 = document.getElementById("car_blue");
 let car3 = document.getElementById("car_red");
-let width = screen.width;
 let raceWidth;
 let raceT1;
 let raceT2;
@@ -12,10 +11,6 @@ let raceT3;
 let winner;
 let result;
 let message;
-let userWin;
-let choice_green;
-let choice_red;
-let choice_blue;
 
 // function to set the racetime for each car //
 
@@ -130,7 +125,7 @@ function raceWinner() {
         
         else if ((raceT1 == raceT2 || raceT1 == raceT3)) {
         result = "Draw";
-        message = "Draw"
+        message = "Draw";
         document.getElementById("race_result").style.color = "black";
         }
         else if ((raceT2 == raceT1 || raceT2 == raceT3)) {
