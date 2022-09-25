@@ -61,8 +61,26 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
 
   - All offical technical testing was carried out and passed in relation to good scores and without error (Lighthouse, Jshint, CSS validator). [Code Testing](https://drive.google.com/drive/folders/1tRKz-6E12cBpUkQMVV4lBziFoajAmrc6)
   **Bug - I was receiving a poor score on Best practise because of the size and ratio of images... I had smaller cars, but had to enlarge and use as original size to pass this.  I think the cars are a bit big.
-  
+
+  - Responsiveness testing - I tested my website on different screen sizes and smaller devices.  In hindsight, a race is not the easiest to accomplish on smaller screen sizes!  I managed to accomplish this to allow the site to still be useable and visually ok, but its not perfect.  See [Screen and Device Testing](https://drive.google.com/drive/folders/1kmpnXYoxblivHhUHUfHhndPJSxhHw0sH)
+
   - User story and feature testing - My website is somewhat straight forward from an end user point of view, so the user stories are quite minimal, but I have still listed out and detailed the testing of these, the feature testing is much more comprehensive.  I still don't think the list of tests will do the amount of testing that was carried out justice, as it took 100s of tests of the same feature to accomplish what was required.  Please find USer Story and feature testing here - [User Story and Feature Testing](https://docs.google.com/spreadsheets/d/1KsQf9enNtaa6bZmAcmcCaRmnD_h3sid6H6iKpDpMRNc/edit#gid=0)
+
+  ### Unfixed Bugs
+  - There are a few in which I have detailed in the testing notes.  Its not perfect on different screen sizes, race length being an issue.  Car sizes also not ideal as I was trying to keep the lighthouse testing green (it insisted on original image sizes)
+
+  ## Original Wireframe
+
+- Before jumping into coding, I wanted to first put some thought into the idea and design of my Website.  The original design did not change too much, but as I got into the project, I decided on changing a few UX items and layouts.  I am not sure what happened to my original plan, I can't locate it in Balsmaiq.  To try and describe, I had firstly gone with three people in a run race and the race course being vertically set up.  Colours completely different.. the colours changed quite a bit to alow for messaging in correct colours and clarity for accessibility. 
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://kevinmcsherry.github.io/P2_the_big_race/
 
 
 
