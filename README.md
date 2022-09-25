@@ -51,10 +51,18 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
 
   ## Testing
 
-  - The testing of this project was really deep.  I thought of an idea and went with it, and tried to get it to work through trial and error.  The bulk of my testing was carried out during the development period, rather than post development.  The majority of my testing was a natural stage of development and not documented.  Every single piece and version of my cpde was tested, as that was what is required to ensure that it actually does what one would hope.  
-  - The deepest testing came from trying to distinguish the distance of the race in relation to the screen size.  This took quite a long time and changing of code.  *Bug - depending on the size of screen, the cars will travel beyond the finish line, and even screen.
+  - The testing of this project was really deep.  I thought of an idea and went with it, and tried to get it to work through trial and error.  The bulk of my testing was carried out during the development period, rather than post development.  The majority of my testing was a natural stage of development and not documented.  Every single piece and version of my code was tested, as that was what is required to ensure that it actually does what one would hope.  
+
+  - The deepest testing came from trying to distinguish the distance of the race in relation to the screen size.  This took quite a long time and changing of code.  *Bug - depending on the size of screen, the cars will travel beyond the finish line, and even screen. I added a function to allow for screen size and length of race.
+
   - The game I chose was particularly difficult when attempting to be responsive.. its generally a tough game to carry out in a small space which can become smaller.
-  - I tested the product across Browsers without issue.
-  - All offical technical testing was carried out and passed in relation to good scores and without error (Lighthouse, Jshint, CSS validator)
+
+  - I tested the product across Browsers without issue. [Browser Testing](https://drive.google.com/drive/folders/1EKGSoQa4eIWfCXsbogJ9xxnBe28wmN1-) 
+
+  - All offical technical testing was carried out and passed in relation to good scores and without error (Lighthouse, Jshint, CSS validator). [Code Testing](https://drive.google.com/drive/folders/1tRKz-6E12cBpUkQMVV4lBziFoajAmrc6)
+  **Bug - I was receiving a poor score on Best practise because of the size and ratio of images... I had smaller cars, but had to enlarge and use as original size to pass this.  I think the cars are a bit big.
   
+  - User story and feature testing - My website is somewhat straight forward from an end user point of view, so the user stories are quite minimal, but I have still listed out and detailed the testing of these, the feature testing is much more comprehensive.  I still don't think the list of tests will do the amount of testing that was carried out justice, as it took 100s of tests of the same feature to accomplish what was required.  Please find USer Story and feature testing here - [User Story and Feature Testing](https://docs.google.com/spreadsheets/d/1KsQf9enNtaa6bZmAcmcCaRmnD_h3sid6H6iKpDpMRNc/edit#gid=0)
+
+
 
