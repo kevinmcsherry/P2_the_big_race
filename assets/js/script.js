@@ -23,7 +23,7 @@ function screenWidth() {
     let width = window.innerWidth;
 
     if (width > 1500) {
-        raceWidth = width / 2.5;
+        raceWidth = width / 3;
     } else if (width > 1200) {
         raceWidth = width / 2.2;
     } else if (width > 1000) {
