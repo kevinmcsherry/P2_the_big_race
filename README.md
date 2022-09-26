@@ -83,5 +83,32 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
 
 The live link can be found here - https://kevinmcsherry.github.io/P2_the_big_race/
 
+## Credits 
 
+I used a number of different websites and did a lot of searching throughout the project.  I really tried to understand the logic that I was finding and implement in my own code, and not just copy and paste in.  I may have lost a lot of time here, but I wanted to understand and learn.
+I used image and photo website referenced below and well known coding sites like Stackoverflow and W3Schools.  I would have really struggled without these reference points.
+
+
+### Content 
+
+- For the standard layout of the screen I used the 'love Maths' as a boiler plate.
+
+- Rightly or wrongly, I really tried to use what I had learned through the course and general web searches on how to structure and code my functions.  I did many searches and I was using [Stackoverflow](https://stackoverflow.com/) and [W3 Schools](https://www.w3schools.com/) quite a lot.  There are lots of great snippets of ideas here that helped me a lot.
+
+- I used the Love Maths project to help inspire me to overall site layout and used the code here to help with the responsiveness media queries.
+
+- I added some animation to the instruction text for the game.  I received feedback that it was easy to miss. I found a great link in W3Schools that had information on animations in CSS. [W3Schools_Text_animation](https://www.w3schools.com/css/css3_animations.asp)
+
+
+
+### Media
+
+- The car images were taken from [Google_images](https://www.google.com/search?q=red+car+images&sxsrf=ALiCzsbqbILsgTPkzVBCi4Aj3Fe-JRHzMQ:1664220191372&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiMp9aql7P6AhWBQEEAHRocAvsQ_AUoAXoECAIQAw&biw=1440&bih=703&dpr=2) when I searched for 'Red/green/blue car images'
+
+
+### Project Summary
+
+- For this project I wanted to do something different than the standard games that were being suggested.  Like the firt project, I was very keen to stamp my own style and coding on it, and not rely too heavily on other sources of code.  I really enjoyed working with javascript and got to the end line through trial and error mostly.  
+I feel that this project allowed me to utilise a lot from what the content had taught and required using quite a few areas of coding (functions, variables, if/else, loops, conditions, parameters).  I am proud that I did not copy and paste any code, but instead learned, understood and applied.
+The game is not perfect and there are still a few things that could be better as explained, but overall I think its an enjoyable game and has some cool features that are coded well.
 
