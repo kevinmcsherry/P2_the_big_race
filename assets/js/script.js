@@ -22,9 +22,11 @@ function raceTime(min, max) {
 function screenWidth() {
     let width = window.innerWidth;
 
-    if (width > 1500) {
+    if (width > 1800) {
+        raceWidth = width / 3.5;
+    }else if (width > 1500) {
         raceWidth = width / 3;
-    } else if (width > 1200) {
+    }else if (width > 1200) {
         raceWidth = width / 2.2;
     } else if (width > 1000) {
         raceWidth = width / 1.6;
