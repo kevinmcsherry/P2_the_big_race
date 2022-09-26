@@ -12,6 +12,19 @@ body {
     font-style: italic;
     margin-top: -10px;
     color: black;
+    animation: text_colour;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes text_colour {
+    from {
+        color: black;
+    }
+
+    to {
+        color: red;
+    }
 }
 
 /* --------- Heading + Logo */
@@ -32,6 +45,7 @@ body {
 .car {
     display: flex;
     flex-direction: column-reverse;
+    cursor: pointer;
 }
 
 .car_green {
@@ -50,6 +64,7 @@ body {
     height: 50px;
     width: auto;
 }
+
 .car_blue:hover {
     transform: scale(1.2);
 }
@@ -63,7 +78,7 @@ body {
     transform: scale(1.2);
 }
 
-.img_finishline{
+.img_finishline {
     width: auto;
     height: 300px;
     float: right;
@@ -101,8 +116,8 @@ body {
     margin-right: auto;
     padding: 0;
     border-color: white;
-    width:fit-content;
-    height:40px;
+    width: fit-content;
+    height: 40px;
     display: inline;
 }
 
@@ -173,9 +188,9 @@ body {
 
 @keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
 /* --------- Media queries */
 
@@ -195,15 +210,15 @@ body {
     }
 
     .car_green {
-       height:50px;
-       width:50px;
-       padding-top: 40px;
-       padding-bottom: 40px;
+        height: 50px;
+        width: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .car_blue {
-        height:50px;
-        width:50px;
+        height: 50px;
+        width: 50px;
         padding-bottom: 40px;
     }
 
@@ -212,9 +227,10 @@ body {
         margin-top: 10px;
     }
 
+
     .car_red {
-        height:50px;
-        width:50px;
+        height: 50px;
+        width: 50px;
     }
 
     .img_finishline {
@@ -261,21 +277,21 @@ body {
     }
 
     .car_green {
-       height:50px;
-       width:50px;
-       padding-top: 40px;
-       padding-bottom: 40px;
+        height: 50px;
+        width: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .car_blue {
-       height:50px;
-       width:50px;
-       padding-bottom: 40px;
+        height: 50px;
+        width: 50px;
+        padding-bottom: 40px;
     }
 
     .car_red {
-        height:50px;
-        width:50px;
+        height: 50px;
+        width: 50px;
     }
 
     .img_finishline {
