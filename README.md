@@ -48,6 +48,7 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
   - I would like to add a further car to the race and to allow a user to select a car for the full game...so they stick with the same car throughout.
   - Another idea is to allow the user to select a particular type of car.. so I could have offered different cars to race.
   - When a championship is won, perhaps a bigger (better) award presentation.  Maybe a trophy image presented on screen.
+  - I would like to perhaps make the race a bit quicker, some feedback is that it can take a car a long time to finish the race (up to 7 seconds).  If I were to do this again, I would perhaps look at making the random number to 1 decimal and have the numbers between 2-4. 
 
   ## Testing
 
@@ -55,9 +56,9 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
 
   - The deepest testing came from trying to distinguish the distance of the race in relation to the screen size.  This took quite a long time and changing of code.  *Bug - depending on the size of screen, the cars will travel beyond the finish line, and even screen. I added a function to allow for screen size and length of race.
 
-  - The game I chose was particularly difficult when attempting to be responsive.. its generally a tough game to carry out in a small space which can become smaller.
+  - The game I chose was particularly difficult when attempting to be responsive.. its generally a tough game to carry out in a small space which can become smaller.  I spent quite a bit of time and trial and error with different screen sizes and mobile.  Its definitely not perfect, but its functional across devices and screen sizes.  The function i wrote to determine race length is :-  function screenWidth() .
 
-  - I tested the product across Browsers without issue. [Browser Testing](https://drive.google.com/drive/folders/1EKGSoQa4eIWfCXsbogJ9xxnBe28wmN1-) 
+  - I tested the product across Browsers without issue. I did not carry out the full range of user/feature tests across browser, but instead did 100% on chrome and 50% across browser by cherry picking key tests in regards race. [Browser Testing](https://drive.google.com/drive/folders/1EKGSoQa4eIWfCXsbogJ9xxnBe28wmN1-) 
 
   - All offical technical testing was carried out and passed in relation to good scores and without error (Lighthouse, Jshint, CSS validator). [Code Testing](https://drive.google.com/drive/folders/1tRKz-6E12cBpUkQMVV4lBziFoajAmrc6)
   **Bug - I was receiving a poor score on Best practise because of the size and ratio of images... I had smaller cars, but had to enlarge and use as original size to pass this.  I think the cars are a bit big.
