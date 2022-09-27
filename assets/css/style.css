@@ -13,8 +13,8 @@ body {
     margin-top: -10px;
     color: black;
     animation: text_colour;
-    animation-duration: 2s;
-    animation-iteration-count: 3;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
 }
 
 @keyframes text_colour {
@@ -23,7 +23,7 @@ body {
     }
 
     to {
-        color: red;
+        color: white;
     }
 }
 
