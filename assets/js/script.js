@@ -25,7 +25,7 @@ function screenWidth() {
     if (width > 1800) {
         raceWidth = width / 3.2;
     }else if (width > 1500) {
-        raceWidth = width / 3;
+        raceWidth = width / 2.8;
     }else if (width > 1200) {
         raceWidth = width / 2.2;
     } else if (width > 1000) {
