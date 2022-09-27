@@ -37,6 +37,8 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
 
     - The first to five wins the overall competition.  The score has to be determined when taking into consideration wins, draws and individual collective results.  When a particular car and/or user wins, there will be a message which appears to display this winner in a flashing animation.  *bug - when two different winners happen, only one displays.  
     I also had to determine the winner due to random number of race duration rather than an image crossing the line.
+    ![Championship Winner](assets/images/Champ_Winner.png)
+
 
 - __Game Restart__
 
@@ -49,6 +51,7 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
   - Another idea is to allow the user to select a particular type of car.. so I could have offered different cars to race.
   - When a championship is won, perhaps a bigger (better) award presentation.  Maybe a trophy image presented on screen.
   - I would like to perhaps make the race a bit quicker, some feedback is that it can take a car a long time to finish the race (up to 7 seconds).  If I were to do this again, I would perhaps look at making the random number to 1 decimal and have the numbers between 2-4. 
+  - After using on a device, I think having the game play on Landscape may have been a good idea.
 
   ## Testing
 
