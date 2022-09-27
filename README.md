@@ -73,6 +73,7 @@ As a one page WebSite, the 'features' are minimial.  Although I have added a num
   ### Unfixed Bugs
   - There are a few in which I have detailed in the testing notes.  Its not perfect on different screen sizes, race length being an issue.  Car sizes also not ideal as I was trying to keep the lighthouse testing green (it insisted on original image sizes)
   - A user can click on the car when its resetting and kick the race off again before completely reset.  I am unable at this point to fix that issue.
+  - If two cars get to 5 only one is determined the winner, the message only displays one car.
 
   ## Original Wireframe
 
